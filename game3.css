@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    width: 100%;
+    max-width: 28rem;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.btn-primary {
+    background-color: #4169e1;
+    border-color: #4169e1;
+}
+
+.btn-primary:hover {
+    background-color: #3a5fcd;
+    border-color: #3a5fcd;
+}
+
+.btn-success {
+    background-color: #2e8b57;
+    border-color: #2e8b57;
+}
+
+.btn-success:hover {
+    background-color: #228b22;
+    border-color: #228b22;
+}
+
+.past-guess {
+    background-color: #e6e6fa;
+    color: #4169e1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin: 0.25rem;
+}

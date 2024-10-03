@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.thumbnail-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    transition: opacity 0.5s ease; 
+}
+
+.play-button {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem; 
+    position: relative;
+    height: 56px; 
+    line-height: 1.5; 
+}
+
+.play-icon {
+    transition: transform 0.3s ease;
+}
+
+.loading {
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-out {
+    opacity: 0; 
+}
+
+.question-mark {
+    font-size: 3rem;
+    margin-left: 0.25rem; 
+    display: inline-block; 
+    animation: swing 1s ease-in-out infinite; 
+}
